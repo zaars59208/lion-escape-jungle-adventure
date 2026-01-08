@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lion Escape: Jungle Adventure</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        <div id="ui-layer">
+            <div id="score-board">Score: 0</div>
+            <div id="high-score">High Score: 0</div>
+            <div id="game-over" class="hidden">
+                <h1>Game Over</h1>
+                <p>The hunters caught up!</p>
+                <div id="final-score">Final Score: 0</div>
+                <button id="restart-btn">Try Again</button>
+            </div>
+            <div id="start-screen">
+                <h1>Arrow Escapes</h1>
+                <p>Escape the hunters, rescue cubs, and eat meat!</p>
+                <p class="controls">SPACE/UP: Jump | SPACE (x2): Double Jump</p>
+                <button id="start-btn">Start Adventure</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
